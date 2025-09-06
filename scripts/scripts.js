@@ -6,12 +6,12 @@ window.onload = function() {
 
     images.forEach((src, idx) => {
         if (idx === 1) {
-            // Para gblmini.png, crear un botón con la imagen
+            // For gblmini.png, button with the img
             const button = document.createElement('button');
             const img = document.createElement('img');
             img.src = src;
             img.alt = `Image ${idx + 1}`;
-            img.style.maxWidth = '100px'; // Tamaño pequeño para el botón
+            img.style.maxWidth = '100px'; // size of the button
             img.style.margin = '10px';
             button.appendChild(img);
             button.onclick = function() {
@@ -28,7 +28,7 @@ window.onload = function() {
         }
     });
 
-    // Agregar activating.png abajo a la izquierda
+    // Add activating.png
     const activatingImg = document.createElement('img');
     activatingImg.src = './assets/activating.png';
     activatingImg.alt = 'Activating';

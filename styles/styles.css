@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: yellow;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-image: url('../assets/background.png');
+    background-size: cover;         /* Hace que el fondo cubra toda la pantalla */
+    background-position: center center;    /* Centra la imagen */
+    background-repeat: no-repeat;   /* No repite la imagen */
+    background-attachment: scroll;   /* Mejor compatibilidad móvil */
+}
+
+.center-text {
+    font-size: 3rem;
+}
+
+#img3 button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+#img3 button img {
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#img1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    max-height: 80vh;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-size: cover; /* Mantiene el fondo cubriendo la pantalla */
+        background-position: center center;
+        background-attachment: scroll; /* Evita problemas de parpadeo en iOS */
+    }
+}
